@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+
+
+
+
+<head>
+
+
+
+   <title>Vegtool</title>
+
+ 
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1"> 
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+
+<!-- links -->
+<style>
+a:link {
+    color: white; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+
+</style>
+
+<!-- all the body -->
+
+<style>
+body {
+    background-image: linear-gradient(to bottom right, rgb(28, 168, 168) , pink);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-size: auto
+}
+
+    @media screen and (max-width: 750px) {
+    body {
+        background-image: linear-gradient(to bottom right, rgb(28, 168, 168) , pink);
+    }
+}
+
+</style>
+
+
+
+<!-- table configuration -->
+<style>
+
+div {
+    
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    font-size: 4.3vw;
+}  
+
+</style>
+
+<style>
+
+.row {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25%;
+  grid-gap: 20px;
+  background-color: none;
+  padding: 1px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 7%;
+  margin-bottom: 10%;
+  color:whitesmoke;
+  
+  
+  }
+
+
+
+@media screen and (max-width: 950px) {
+.row {
+    display: grid;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+  background-color: none;
+  padding: 1px;
+  margin-right: 5%;
+  margin-left: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  color:whitesmoke;
+  
+    }
+}
+</style>
+
+<!-- display of the day -->
+
+<style>
+.day {
+    
+
+  margin-left: 50px;
+  margin-top: 0%;
+
+    }
+
+@media screen and (max-width: 950px) {
+.day {
+    
+    font-size: 140%;
+    }
+}
+
+</style>
+
+<!-- display of Vegtool -->
+
+<style>
+    .vegtool {
+        
+ color: rgb(255, 255, 255); 
+ margin-left: 50px;
+ margin-top: 25px; 
+ margin-bottom: 25px;
+        }
+    
+    @media screen and (max-width: 950px) {
+    .vegtool {
+        
+        font-size: 200%;
+        margin-bottom: 10px;
+        }
+    }
+    
+    </style>
+
+  </head>
+
+ <!-- Vegtool --> 
+ <h1 class="vegtool"><a href="vegtool 10.1.html">Vegtool</a></h1>
+
+<body>
+
+
+    <!-- Day of the week -->
+    <h2 class="day" id="day"></h2>
+    <h2 class="day" id="moment">Good evening!</h2>
+
+
+    <!-- Table -->
+    <div1 class="row">
+            <a href="https://chefcuisto.com/recette/quinoa-mexicain-one-pot/" target="_blank"><div>Mexican Quinoa</div></a>
+            <a href="https://www.kpourkatrine.com/fr/recettes/tacos-de-chou-fleur-et-creme-davocat/" target="_blank"><div>Cauliflower Tacos</div></a>
+            <a href="https://www.thebuddhistchef.com/recipe/tvp-tacos-2/" target="_blank"><div>TVP Tacos</div></a>
+            
+        
+        
+         
+      </div1>
+
+          
+            
+
+          
+        </div>
+      </div>
+
+
+<!-- JavaScript: day of the week + moment of the day-->
+      <script>
+        var d = new Date();
+        var days = ["It's Sunday"," It'sMonday","It's Tuesday","It's Wednesday","It's Thursday","It's Friday","It's Saturday"];
+        document.getElementById("day").innerHTML = days[d.getDay()];
+
+
+ if (new Date().getHours() < 24) {
+    document.getElementById("moment").innerHTML = "Good evening!";
+}
+
+        if (new Date().getHours() < 17) {
+    document.getElementById("moment").innerHTML = "Good afternoon!";
+}
+    if (new Date().getHours() < 12) {
+    document.getElementById("moment").innerHTML = "Good morning!";
+}
+        </script>
+</body>
+
+</html>
